@@ -1,8 +1,8 @@
-package com.miu.cs545.repository.impl;
+package com.miu.cs545.posts.repository.impl;
 
-import com.miu.cs545.domain.Post;
-import com.miu.cs545.domain.dto.request.PostRequest;
-import com.miu.cs545.repository.PostRepository;
+import com.miu.cs545.posts.domain.Post;
+import com.miu.cs545.posts.domain.dto.request.PostRequest;
+import com.miu.cs545.posts.repository.PostRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

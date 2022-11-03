@@ -1,10 +1,10 @@
-package com.miu.cs545.service.impl;
+package com.miu.cs545.posts.service.impl;
 
-import com.miu.cs545.domain.Post;
-import com.miu.cs545.domain.dto.request.PostRequest;
-import com.miu.cs545.helper.ListMapper;
-import com.miu.cs545.repository.PostRepository;
-import com.miu.cs545.service.PostService;
+import com.miu.cs545.posts.domain.Post;
+import com.miu.cs545.posts.domain.dto.request.PostRequest;
+import com.miu.cs545.posts.helper.ListMapper;
+import com.miu.cs545.posts.repository.PostRepository;
+import com.miu.cs545.posts.service.PostService;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

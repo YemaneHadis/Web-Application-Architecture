@@ -1,8 +1,8 @@
-package com.miu.cs545.controller;
+package com.miu.cs545.posts.controller;
 
-import com.miu.cs545.domain.Post;
-import com.miu.cs545.domain.dto.request.PostRequest;
-import com.miu.cs545.service.PostService;
+import com.miu.cs545.posts.domain.Post;
+import com.miu.cs545.posts.domain.dto.request.PostRequest;
+import com.miu.cs545.posts.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

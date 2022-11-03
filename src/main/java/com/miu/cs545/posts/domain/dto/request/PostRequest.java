@@ -1,14 +1,11 @@
-package com.miu.cs545.domain;
+package com.miu.cs545.posts.domain.dto.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
-public class Post {
-    long id;
+public class PostRequest {
     String title;
     String content;
     String author;

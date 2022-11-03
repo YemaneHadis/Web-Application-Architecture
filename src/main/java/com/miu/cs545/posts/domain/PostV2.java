@@ -1,4 +1,4 @@
-package com.miu.cs545.domain;
+package com.miu.cs545.posts.domain;
 
 public class PostV2 {
     long id;

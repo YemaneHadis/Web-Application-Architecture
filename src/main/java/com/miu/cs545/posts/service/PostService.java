@@ -1,7 +1,7 @@
-package com.miu.cs545.service;
+package com.miu.cs545.posts.service;
 
-import com.miu.cs545.domain.Post;
-import com.miu.cs545.domain.dto.request.PostRequest;
+import com.miu.cs545.posts.domain.Post;
+import com.miu.cs545.posts.domain.dto.request.PostRequest;
 
 import java.util.List;
 

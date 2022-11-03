@@ -1,4 +1,4 @@
-package com.miu.cs545.helper;
+package com.miu.cs545.posts.helper;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
