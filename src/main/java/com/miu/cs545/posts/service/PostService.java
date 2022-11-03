@@ -20,4 +20,6 @@ public interface PostService {
     List<PostRequest> findAllV2();
 
     List<PostRequest> findByAuthorName(String authorName);
+
+    List<Post> findByTitle(String title);
 }

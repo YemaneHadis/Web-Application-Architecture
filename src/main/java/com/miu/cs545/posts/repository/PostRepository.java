@@ -19,4 +19,6 @@ public interface PostRepository {
     void save(PostRequest postRequest);
 
     List<Post> findByAuthorName(String authorName);
+
+    List<Post> findByTitle(String title);
 }

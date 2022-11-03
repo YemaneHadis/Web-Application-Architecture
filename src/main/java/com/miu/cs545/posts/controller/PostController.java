@@ -67,5 +67,12 @@ public class PostController {
     }
 
 
+    @ResponseStatus(HttpStatus.OK)
+    @DeleteMapping("/v1/posts/{title}")
+    public List<Post> postWithTitle(@PathVariable String title){
+        return postService.findByTitle(title);
+    }
+
+
 }
 

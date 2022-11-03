@@ -1,6 +1,6 @@
-package com.miu.cs545.posts.domain;
+package com.miu.cs545.users.domain.model;
 
-import com.miu.cs545.comment.domain.model.Comment;
+import com.miu.cs545.posts.domain.Post;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,20 +8,16 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.util.List;
 
-@Data
 @AllArgsConstructor
+@Data
 @NoArgsConstructor
 @Entity
-public class Post {
+public class User {
     @Id
     @GeneratedValue
     long id;
-    String title;
-    String content;
-    String author;
-
+    String name;
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn
-    List<Comment> comments;
-
+    List<Post> posts;
 }

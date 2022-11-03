@@ -1,4 +1,4 @@
-package com.miu.cs545.posts.helper;
+package com.miu.cs545.helper;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,4 +28,8 @@ public class ListMapper<T,E> {
                 .map(e->modelMapper.map(e,convertTo.getClass()))
                 .collect(Collectors.toList());
     }
+    public  E  mapObject( T source , E convertTo){
+        return (E) modelMapper.map(source,convertTo.getClass());
+    }
+
 }

@@ -2,7 +2,7 @@ package com.miu.cs545.posts.service.impl;
 
 import com.miu.cs545.posts.domain.Post;
 import com.miu.cs545.posts.domain.dto.request.PostRequest;
-import com.miu.cs545.posts.helper.ListMapper;
+import com.miu.cs545.helper.ListMapper;
 import com.miu.cs545.posts.repository.PostRepository;
 import com.miu.cs545.posts.service.PostService;
 import org.modelmapper.ModelMapper;
@@ -56,5 +56,10 @@ public class PostServiceImpl implements PostService {
     public List<PostRequest> findByAuthorName(String authorName) {
        List<Post> posts=  postRepository.findByAuthorName(authorName);
        return listMapper.mapList(posts,PostRequest.class);
+    }
+
+    @Override
+    public List<Post> findByTitle(String title) {
+        return postRepository.findByTitle(title);
     }
 }
