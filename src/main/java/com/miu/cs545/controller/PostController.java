@@ -16,11 +16,11 @@ public class PostController {
     @Autowired
     private PostService postService;
 
-    @ResponseStatus(HttpStatus.OK)
-    @GetMapping("/v1/posts")
-    public List<Post> getAll(){
-            return postService.findAll();
-    }
+//    @ResponseStatus(HttpStatus.OK)
+//    @GetMapping("/v1/posts")
+//    public List<Post> getAll(){
+//            return postService.findAll();
+//    }
 
 
     @ResponseStatus(HttpStatus.OK)
@@ -66,6 +66,4 @@ public class PostController {
         return postService.findByAuthorName(authorName);
     }
 
-
 }
-
